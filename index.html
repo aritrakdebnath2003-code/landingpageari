@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gator - The desk's apex organiser. A sustainable, crocodile-shaped design collectible.">
+    <title>Gator | The Desk's Apex Organiser</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation (Simple Brand) -->
+    <nav class="navbar">
+        <div class="logo">GATOR</div>
+        <div class="nav-links">
+            <a href="#description">About</a>
+            <a href="#problem">Struggles</a>
+            <a href="#features">Features</a>
+            <a href="#colorways">Colors</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+        <button class="btn-primary">Pre-order</button>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section reveal">
+            <div class="hero-image-container reveal">
+                <img src="assets/hero-image.jpg" alt="Gator Product Hero Image" class="hero-image">
+            </div>
+            <div class="hero-content">
+                <h1>MEET, GATOR</h1>
+                <p class="tagline">The keeper of your desk swamp</p>
+            </div>
+        </section>
+
+        <!-- Product Description -->
+        <section id="description" class="description-section reveal">
+            <div class="container">
+                <h2>Control chaos. Keep the character.</h2>
+                <p class="core-insight"
+                    style="margin-top: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Your desk deserves more than a plastic tray. Gator combines ruthless organization with an iconic,
+                    sustainable design.
+                </p>
+
+                <button class="btn-primary" style="margin-top: 2rem;">Adopt a Gator</button>
+            </div>
+        </section>
+
+        <!-- Problem Statement Carousel -->
+        <section id="problem" class="problem-section reveal">
+            <div class="container">
+                <h2>The Daily Struggles</h2>
+                <div class="showreel-container">
+                    <div class="showreel-strip">
+                        <div class="reel-item active" data-caption='"My cables are everywhere."'>
+                            <img src="assets/problem-cables.png" alt="Cables everywhere" class="reel-img">
+                        </div>
+                        <div class="reel-item" data-caption='"Generic organizers feel soulless."'>
+                            <img src="assets/problem-generic.jpg" alt="Generic organizers feel soulless"
+                                class="reel-img">
+                        </div>
+                        <div class="reel-item" data-caption='"I need a workspace that inspires."'>
+                            <img src="assets/problem-inspiring.png" alt="Inspiring workspace" class="reel-img">
+                        </div>
+                    </div>
+                    <div class="showreel-caption">
+                        <p id="active-caption">"My cables are everywhere."</p>
+                    </div>
+                    <!-- Controls removed as requested implicit auto behavior, but user didn't explicitly say remove, but showreel usually implies auto or strip. I'll remove buttons for cleaner look or keep them hidden/optional. The user asked for "automatic", and "like a showreel". -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Features (Cards) -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="reveal">Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <img src="assets/feature-cable.png" alt="Cable Chomper" class="feature-img">
+                        <h3>Cable Chomper</h3>
+                        <p>Mouth design grips cables securely.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <img src="assets/feature-coaster.jpg" alt="Coaster Body" class="feature-img">
+                        <h3>Coaster Body</h3>
+                        <p>Use the dividers as coasters for your drinks</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <img src="assets/feature-tail.jpg" alt="Tail Tray" class="feature-img">
+                        <h3>Tail Tray</h3>
+                        <p>Perfect for clips, pins, and pods.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Colorways -->
+        <section id="colorways" class="colorways-section reveal">
+            <div class="container">
+                <h2>Pick Your Skin</h2>
+                <div class="color-picker">
+                    <button class="color-swatch active" data-color="swamp-green"
+                        style="background-color: var(--color-primary);"></button>
+
+                    <button class="color-swatch" data-color="mud-brown" style="background-color: #8B572A;"></button>
+                    <button class="color-swatch" data-color="sand-yellow" style="background-color: #F5A623;"></button>
+                </div>
+                <div class="color-preview">
+                    <div class="placeholder-preview" id="color-preview-box"
+                        style="background-image: url('assets/gator-swamp-green.png'); background-color: transparent;">
+                    </div>
+                    <p id="color-name">Swamp Green</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section id="gallery" class="gallery-section">
+            <div class="gallery-grid">
+                <div class="gallery-item reveal" style="background-image: url('assets/gallery-1.jpg');"></div>
+                <div class="gallery-item reveal" style="background-image: url('assets/gallery-2.jpg');"></div>
+                <div class="gallery-item reveal" style="background-image: url('assets/gallery-3.jpg');"></div>
+                <div class="gallery-item reveal" style="background-image: url('assets/gallery-4.jpg');"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>GATOR</h3>
+                <p>Designed for the desk dweller.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Behance</a>
+            </div>
+            <div class="footer-info">
+                <p>123 Creative Studio, Design District, Urban City</p>
+                <p>&copy; 2026 Gator Design. All rights reserved.</p>
+                <a href="#">Terms</a> | <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js" defer></script>
+</body>
+
+</html>
